@@ -10,7 +10,7 @@
 
     <!--Description-->
     
-        <meta name="description" content="Embora sabemos que o Java é uma linguagem projetada para ser independente da plataforma, fazer chamada a biblioteca nativas do sistema operacional  é ">
+        <meta name="description" content="Este é um exemplo básico de como fazer chamadas a biblioteca nativas do sistema operacional, como DLL do windows, por exemplo. Interagir com aplicaçõe">
     
 
     <!--Author-->
@@ -110,7 +110,7 @@
                     <li>
                         <a href="/">
                             
-                                Home
+                                <i class="fa fa-home fa-stack-2x"></i>
                             
                         </a>
                     </li>
@@ -118,7 +118,15 @@
                     <li>
                         <a href="/archives">
                             
-                                Archives
+                                Posts
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about">
+                            
+                                Sobre
                             
                         </a>
                     </li>
@@ -127,6 +135,14 @@
                         <a href="https://github.com/ergildo">
                             
                                 <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/rss">
+                            
+                                <i class="fa fa-rss fa-stack-2x"></i>
                             
                         </a>
                     </li>
@@ -148,10 +164,6 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
                     <h1>Executando bibliotecas nativas com JNA(Java Native API)</h1>
-                    
-                    <h2 class="post-subheading">
-                        Este é um exemplo básico de como fazer chamadas a biblioteca nativas do sistema operacional, como DLL do windows, por exemplo. Interagir com aplicações desenvolvida em outras linguagens a partir do código Java utilizando JNA(Java Native API).
-                    </h2>
                     
                     <span class="meta">
                         <!-- Date and Author -->
@@ -191,7 +203,7 @@
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p> Embora sabemos que o Java é uma linguagem projetada para ser independente da plataforma, fazer chamada a biblioteca nativas do sistema operacional  é muito útil quando você precisa interagir bibliotecas específicos do sistema operacional ou quando você precisa interagir com aplicações desenvolvida em outras linguagens, um sistema legado desenvolvido em C, por exemplo. É claro, que integração com um sistema legado pode ser feita de N formas, como arquivo texto, banco de dados e web services, por exemplos. Mas, suponhamos que você queira apenas executar um método específico de uma biblioteca. Um exemplo bastante aplicável disso seria a comunicação com hardware, onde o fabricante, ao invés de disponibilizar um biblioteca para cada linguagens, disponibiliza apenas uma biblioteca nativa que prover a comunicação. Neste caso, para interagir com o hardware seria necessário executar chamadas aos métodos da biblioteca disponibilizada pelo o fabricante.  </p>
+                <h4 id="Este-e-um-exemplo-basico-de-como-fazer-chamadas-a-biblioteca-nativas-do-sistema-operacional-como-DLL-do-windows-por-exemplo-Interagir-com-aplicacoes-desenvolvida-em-outras-linguagens-a-partir-do-codigo-Java-utilizando-JNA-Java-Native-API"><a href="#Este-e-um-exemplo-basico-de-como-fazer-chamadas-a-biblioteca-nativas-do-sistema-operacional-como-DLL-do-windows-por-exemplo-Interagir-com-aplicacoes-desenvolvida-em-outras-linguagens-a-partir-do-codigo-Java-utilizando-JNA-Java-Native-API" class="headerlink" title="Este é um exemplo básico de como fazer chamadas a biblioteca nativas do sistema operacional, como DLL do windows, por exemplo. Interagir com aplicações desenvolvida em outras linguagens a partir do código Java utilizando JNA(Java Native API)."></a>Este é um exemplo básico de como fazer chamadas a biblioteca nativas do sistema operacional, como DLL do windows, por exemplo. Interagir com aplicações desenvolvida em outras linguagens a partir do código Java utilizando JNA(Java Native API).</h4><p> Embora sabemos que o Java é uma linguagem projetada para ser independente da plataforma, fazer chamada a biblioteca nativas do sistema operacional  é muito útil quando você precisa interagir bibliotecas específicos do sistema operacional ou quando você precisa interagir com aplicações desenvolvida em outras linguagens, um sistema legado desenvolvido em C, por exemplo. É claro, que integração com um sistema legado pode ser feita de N formas, como arquivo texto, banco de dados e web services, por exemplos. Mas, suponhamos que você queira apenas executar um método específico de uma biblioteca. Um exemplo bastante aplicável disso seria a comunicação com hardware, onde o fabricante, ao invés de disponibilizar um biblioteca para cada linguagens, disponibiliza apenas uma biblioteca nativa que prover a comunicação. Neste caso, para interagir com o hardware seria necessário executar chamadas aos métodos da biblioteca disponibilizada pelo o fabricante.  </p>
 <p>O Java provê duas forma de executar chamadas a bibliotecas nativas: via JNI (<em>Java Native Interface</em>) e JNA (<em>Java Native API</em>). Neste exemplo utilizaremos a JNA por ser menos complexa. Na verdade, a JNA abstrai a complexidade da JNI tornando o código mais simples e independente do Java, mas no frigir dos ovos o resultado é o mesmo. </p>
 <p>Para este exemplo, utilizaremos uma dll já pronta chamada library.dll que pode ser baixada <a href="https://github.com/ergildo/execultarNativeLibraryJNA/blob/master/src/main/resources/library.dll">aqui</a>.   Esta dll foi desenvolvido em utilizando a linguagem C. Não entrarei em detalhes de como gerar um dll, pois, este seria um assunto para um post futuro. </p>
 <p>Então… vamos ao que interessa! Adicione a lib do JNA ao seu projeto. Podemos obtê-la através do <a href="https://github.com/java-native-access/jna">repositório oficial do JNA</a>. Cópie a biblioteca para o classpath do seu projeto. Se estiver utilizando o sistema operacional windows, uma alternativa sería colocar a biblioteca no diretório system32. </p>
@@ -225,7 +237,7 @@
         }(document, 'script', 'facebook-jssdk'));
     </script>
 
-    <div class="fb-comments" data-href="https://github.com/ergildo/2017/01/27/Executando-bibliotecas-nativas-com-JNA-Java-Native-API/index.html" data-num-posts="5" data-width="100%" data-colorscheme="light"></div>
+    <div class="fb-comments" data-href="https://github.com/ergildo/27/01/2017/Executando-bibliotecas-nativas-com-JNA-Java-Native-API/index.html" data-num-posts="5" data-width="100%" data-colorscheme="light"></div>
 
                 </div>
             
